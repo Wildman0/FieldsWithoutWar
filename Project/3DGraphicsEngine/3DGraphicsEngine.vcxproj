@@ -19,73 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AggressiveStance.h" />
-    <ClInclude Include="AI.h" />
-    <ClInclude Include="AINodes.h" />
-    <ClInclude Include="AttackEnemy.h" />
-    <ClInclude Include="AttackProvinceNode.h" />
-    <ClInclude Include="AttackTerritory.h" />
-    <ClInclude Include="AvoidEnemy.h" />
-    <ClInclude Include="BuildUnits.h" />
-    <ClInclude Include="CombatHelper.h" />
-    <ClInclude Include="DeclareWar.h" />
-    <ClInclude Include="DiploInteractions.h" />
-    <ClInclude Include="FPSCounter.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Hex.h" />
-    <ClInclude Include="HexHandler.h" />
-    <ClInclude Include="HuntEnemyUnits.h" />
-    <ClInclude Include="InputHandler.h" />
-    <ClInclude Include="mapLoadHandler.h" />
-    <ClInclude Include="mapSaveHandler.h" />
-    <ClInclude Include="Nation.h" />
-    <ClInclude Include="NationHandler.h" />
-    <ClInclude Include="PathFinder.h" />
-    <ClInclude Include="PeaceOut.h" />
-    <ClInclude Include="Planner.h" />
-    <ClInclude Include="RelationshipHandler.h" />
-    <ClInclude Include="StrategyGame.h" />
-    <ClInclude Include="UIBox.h" />
-    <ClInclude Include="UIHandler.h" />
-    <ClInclude Include="UIText.h" />
-    <ClInclude Include="UnitAI.h" />
-    <ClInclude Include="UnitAINode.h" />
-    <ClInclude Include="UnitStack.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AggressiveStance.cpp" />
-    <ClCompile Include="AI.cpp" />
-    <ClCompile Include="AINodes.cpp" />
-    <ClCompile Include="AttackEnemy.cpp" />
-    <ClCompile Include="AttackProvinceNode.cpp" />
-    <ClCompile Include="AttackTerritory.cpp" />
-    <ClCompile Include="AvoidEnemy.cpp" />
-    <ClCompile Include="BuildUnits.cpp" />
-    <ClCompile Include="CombatHelper.cpp" />
-    <ClCompile Include="DeclareWar.cpp" />
-    <ClCompile Include="DiploInteractions.cpp" />
-    <ClCompile Include="FPSCounter.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Hex.cpp" />
-    <ClCompile Include="HexHandler.cpp" />
-    <ClCompile Include="HuntEnemyUnits.cpp" />
-    <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="mapLoadHandler.cpp" />
-    <ClCompile Include="mapSaveHandler.cpp" />
-    <ClCompile Include="Nation.cpp" />
-    <ClCompile Include="NationHandler.cpp" />
-    <ClCompile Include="PathFinder.cpp" />
-    <ClCompile Include="PeaceOut.cpp" />
-    <ClCompile Include="Planner.cpp" />
-    <ClCompile Include="RelationshipHandler.cpp" />
-    <ClCompile Include="StrategyGame.cpp" />
-    <ClCompile Include="UIBox.cpp" />
-    <ClCompile Include="UIHandler.cpp" />
-    <ClCompile Include="UIText.cpp" />
-    <ClCompile Include="UnitAI.cpp" />
-    <ClCompile Include="UnitAINode.cpp" />
-    <ClCompile Include="UnitStack.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{73B09600-3519-47F4-9DD5-877DDD84432A}</ProjectGuid>
