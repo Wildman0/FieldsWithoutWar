@@ -12,6 +12,12 @@ Game::~Game()
 {
 }
 
+//Runs at start
+void Game::start()
+{
+	sfmlTest();
+}
+
 //SFML sample code
 void Game::sfmlTest()
 {
@@ -32,10 +38,4 @@ void Game::sfmlTest()
 		window.draw(shape);
 		window.display();
 	}
-}
-
-//Runs at start
-void Game::start() 
-{
-	sfmlTest();
 }
