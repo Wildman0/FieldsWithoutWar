@@ -4,7 +4,7 @@ class UIAnchor
 {
 public:
 	UIAnchor();
-	UIAnchor(sf::RenderWindow window);
+	UIAnchor(sf::RenderWindow* window);
 	~UIAnchor();
 
 	enum AnchorPosition{BottomLeft, BottomRight, Center, TopLeft, TopRight};

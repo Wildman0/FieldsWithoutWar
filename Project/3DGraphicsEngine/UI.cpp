@@ -1,4 +1,5 @@
 #include "UI.h"
+#include <iostream>
 
 UI::UI()
 {
@@ -11,6 +12,7 @@ UI::UI(sf::RenderWindow* window)
 	m_window = window;
 	m_defaultFont = new sf::Font();
 	m_defaultFont->loadFromFile("Fonts/Roboto-Bold.ttf");
+	m_anchor = UIAnchor(window);
 }
 
 //Destructor
@@ -23,6 +25,11 @@ UI::~UI()
 void UI::drawCircleShape(sf::CircleShape circleShape, sf::Vector2u position, sf::Color color)
 {
 	circleShape.setFillColor(color);
+	circleShape.setPosition((float)position.x + m_anchor.m_anchorPositionAsPixels[(int)m_anchor.Center].x, 
+							(float)position.y + m_anchor.m_anchorPositionAsPixels[(int)m_anchor.Center].y);
+
+	std::cout << std::to_string(circleShape.getPosition().x);
+	std::cout << std::to_string(circleShape.getPosition().y);
 
 	while (m_window->isOpen())
 	{

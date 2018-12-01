@@ -36,5 +36,5 @@ void Game::initializeUI()
 //SFML sample code
 void Game::sfmlTest()
 {
-	m_ui.drawCircleShape(sf::CircleShape(100.f), sf::Vector2u(100, 100), sf::Color::Green);
+	m_ui.drawCircleShape(sf::CircleShape(100.f), sf::Vector2u(0, 0), sf::Color::Green);
 }

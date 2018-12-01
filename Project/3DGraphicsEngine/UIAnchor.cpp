@@ -8,9 +8,9 @@ UIAnchor::UIAnchor()
 }
 
 //Constructor
-UIAnchor::UIAnchor(sf::RenderWindow window)
+UIAnchor::UIAnchor(sf::RenderWindow* window)
 {
-	m_window = &window;
+	m_window = window;
 	m_windowSize = m_window->getSize();
 
 	start();
