@@ -4,6 +4,8 @@
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics.hpp>
 
+#include "UIAnchor.h"
+
 class UI
 {
 public:
@@ -11,8 +13,9 @@ public:
 	UI(sf::RenderWindow* window);
 	~UI();
 
+	UIAnchor m_anchor;
+
 	sf::RenderWindow* m_window;
 	sf::Font* m_defaultFont;
-	void drawCircleShape(sf::CircleShape circleShape);
+	void drawCircleShape(sf::CircleShape circleShape, sf::Vector2u position, sf::Color color);
 };
-

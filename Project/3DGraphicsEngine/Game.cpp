@@ -21,33 +21,20 @@ void Game::start()
 	sfmlTest();
 }
 
+//Initializes the game window
 void Game::initializeWindow()
 {
 	m_window = new sf::RenderWindow(sf::VideoMode(1280, 720), "Fields Without War");
 }
 
+//Initializes the game UI
 void Game::initializeUI()
 {
-	//m_ui = UI(m_window);
+	m_ui = UI(m_window);
 }
 
 //SFML sample code
 void Game::sfmlTest()
 {
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
-
-	while (m_window->isOpen())
-	{
-		sf::Event event;
-		while (m_window->pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				m_window->close();
-		}
-
-		m_window->clear();
-		m_window->draw(shape);
-		m_window->display();
-	}
+	m_ui.drawCircleShape(sf::CircleShape(100.f), sf::Vector2u(100, 100), sf::Color::Green);
 }
