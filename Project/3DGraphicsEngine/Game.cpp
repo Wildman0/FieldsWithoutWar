@@ -17,12 +17,18 @@ Game::~Game()
 void Game::start()
 {
 	initializeWindow();
+	initializeUI();
 	sfmlTest();
 }
 
 void Game::initializeWindow()
 {
 	m_window = new sf::RenderWindow(sf::VideoMode(1280, 720), "Fields Without War");
+}
+
+void Game::initializeUI()
+{
+	//m_ui = UI(m_window);
 }
 
 //SFML sample code

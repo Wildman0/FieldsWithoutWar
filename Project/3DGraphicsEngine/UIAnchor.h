@@ -2,6 +2,7 @@
 class UIAnchor
 {
 public:
+	UIAnchor();
 	UIAnchor(sf::RenderWindow window);
 	~UIAnchor();
 
@@ -12,7 +13,6 @@ private:
 	void start();
 	void setUIAnchorPositions();
 
-	Game* instance;
 	sf::RenderWindow* m_window;
 	sf::Vector2u m_windowSize;
 };
