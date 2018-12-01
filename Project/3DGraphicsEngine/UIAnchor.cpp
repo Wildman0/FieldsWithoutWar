@@ -1,6 +1,12 @@
 #include "Game.h"
 #include "UIAnchor.h"
 
+//Contructor
+UIAnchor::UIAnchor()
+{
+
+}
+
 //Constructor
 UIAnchor::UIAnchor(sf::RenderWindow window)
 {
