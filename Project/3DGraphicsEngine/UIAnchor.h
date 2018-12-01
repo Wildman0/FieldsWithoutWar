@@ -6,7 +6,7 @@ public:
 	~UIAnchor();
 
 	enum AnchorPosition{BottomLeft, BottomRight, Center, TopLeft, TopRight};
-	sf::Vector2f m_anchorPositionAsPixels[5];
+	sf::Vector2u m_anchorPositionAsPixels[5];
 
 private:
 	void start();
@@ -14,6 +14,6 @@ private:
 
 	Game* instance;
 	sf::RenderWindow* m_window;
-	sf::Vector2f m_windowSize;
+	sf::Vector2u m_windowSize;
 };
 
