@@ -8,6 +8,7 @@ public:
 	~UIAnchor();
 
 	enum AnchorPosition{BottomLeft, BottomRight, Center, TopLeft, TopRight};
+	AnchorPosition m_anchorPosition = Center;
 	sf::Vector2u m_anchorPositionAsPixels[5];
 
 private:
