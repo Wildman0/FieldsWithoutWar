@@ -13,7 +13,7 @@ UI::UI(sf::RenderWindow* window)
 	m_defaultFont = new sf::Font();
 	m_defaultFont->loadFromFile("Fonts/Roboto-Bold.ttf");
 	m_anchor = UIAnchor(window);
-	m_anchor.m_anchorPosition = 3;
+	m_anchor.m_anchorPosition = (UIAnchor::AnchorPosition)3;
 }
 
 //Destructor
