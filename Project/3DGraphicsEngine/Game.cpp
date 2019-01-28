@@ -1,8 +1,8 @@
 #include "Game.h"
-#include "SFML/Graphics.hpp"
 
 //Constructor
 Game::Game()
+	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
 	start();
 }
@@ -16,25 +16,27 @@ Game::~Game()
 //Runs at start
 void Game::start()
 {
-	initializeWindow();
-	initializeUI();
+	createWindow();
 	sfmlTest();
-}
-
-//Initializes the game window
-void Game::initializeWindow()
-{
-	m_window = new sf::RenderWindow(sf::VideoMode(1280, 720), "Fields Without War");
-}
-
-//Initializes the game UI
-void Game::initializeUI()
-{
-	m_ui = UI(m_window);
 }
 
 //SFML sample code
 void Game::sfmlTest()
 {
-	m_ui.drawCircleShape(sf::CircleShape(100.f), sf::Vector2u(0, 0), sf::Color::Green);
+	sf::CircleShape shape(100.f);
+	shape.setFillColor(sf::Color::Green);
+
+	while(window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+		window.clear();
+		window.draw(shape);
+		window.display();
+	}
 }

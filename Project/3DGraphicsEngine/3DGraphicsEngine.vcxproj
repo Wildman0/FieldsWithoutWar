@@ -21,13 +21,9 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="UI.cpp" />
-    <ClCompile Include="UIAnchor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
-    <ClInclude Include="UI.h" />
-    <ClInclude Include="UIAnchor.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{73B09600-3519-47F4-9DD5-877DDD84432A}</ProjectGuid>
