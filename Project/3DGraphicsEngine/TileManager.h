@@ -1,16 +1,16 @@
 #pragma once
+
+#include "TileType.h"
+#include <array>
+#include "Tile.h"
+#include <vector>
+
 class TileManager
 {
 public:
 	TileManager();
+	TileManager(int mapSizeX, int mapSizeY);
 	~TileManager();
 
-
-	
-};
-
-enum TileType
-{
-	grass,
-	brickWall
+	std::vector<std::vector<Tile>> tileMap;
 };
