@@ -1,13 +1,14 @@
 #pragma once
-#include "TileManager.h"
+#include "TileType.h"
 
 class Tile
 {
 public:
 	Tile();
+	Tile(TileType t);
 	~Tile();
 
-	TileType setTileType(TileType t) { tileType = t; }
+	void setTileType(TileType t) { tileType = t; }
 	TileType getTileType() { return tileType; }
 
 private:
