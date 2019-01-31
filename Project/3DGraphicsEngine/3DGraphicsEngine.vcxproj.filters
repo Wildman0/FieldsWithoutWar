@@ -19,6 +19,12 @@
     <Filter Include="Header Files\Main">
       <UniqueIdentifier>{116b0ba7-3643-475c-b1b0-e70a0a1a4941}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Tile">
+      <UniqueIdentifier>{01608986-cf97-4b89-b3cb-c2db79382631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tile">
+      <UniqueIdentifier>{a5f87aa6-1aa9-47ef-8e22-d87758d0603e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -28,9 +34,12 @@
       <Filter>Source Files\Main</Filter>
     </ClCompile>
     <ClCompile Include="Tile.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Tile</Filter>
     </ClCompile>
     <ClCompile Include="TileManager.cpp">
+      <Filter>Source Files\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +47,16 @@
     <ClInclude Include="Game.h">
       <Filter>Header Files\Main</Filter>
     </ClInclude>
-    <ClInclude Include="Tile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TileManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files\Tile</Filter>
     </ClInclude>
     <ClInclude Include="TileType.h">
+      <Filter>Header Files\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

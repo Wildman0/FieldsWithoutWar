@@ -23,11 +23,13 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Tile.cpp" />
     <ClCompile Include="TileManager.cpp" />
+    <ClCompile Include="TileRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileManager.h" />
+    <ClInclude Include="TileRenderer.h" />
     <ClInclude Include="TileType.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
