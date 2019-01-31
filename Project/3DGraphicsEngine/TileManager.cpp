@@ -6,7 +6,15 @@ TileManager::TileManager()
 	
 }
 
-TileManager::TileManager(int mapSizeX, int mapSizeY)
+TileManager::TileManager(uint8_t mapSizeX, uint8_t mapSizeY)
+{
+	this->mapSizeX = mapSizeX;
+	this->mapSizeY = mapSizeY;
+
+	start();
+}
+
+void TileManager::start()
 {
 	tileMap.resize(mapSizeX);
 
