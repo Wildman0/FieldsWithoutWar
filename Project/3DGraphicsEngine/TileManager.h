@@ -10,7 +10,7 @@ class TileManager
 {
 public:
 	TileManager();
-	TileManager(uint8_t mapSizeX, uint8_t mapSizeY);
+	TileManager(int mapSizeX, int mapSizeY);
 	~TileManager();
 
 	std::vector<std::vector<Tile>> tileMap;
@@ -18,6 +18,6 @@ public:
 private:
 	void start();
 
-	uint8_t mapSizeX;
-	uint8_t mapSizeY;
+	sf::Uint8 mapSizeX;
+	sf::Uint8 mapSizeY;
 };
