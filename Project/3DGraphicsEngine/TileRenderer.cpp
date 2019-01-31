@@ -15,8 +15,9 @@ void TileRenderer::renderTileMap(TileManager tileManager, sf::RenderWindow* wind
 		for (size_t j = 0; j < tileManager.tileMap[0].capacity(); j++)
 		{
 			sf::Sprite* s;
+
 			s = &tileManager.tileSprites[grass];
-			s->setPosition(i * 36, j * 36);
+			s->setPosition(i * 35, j * 35);
 
 			window->draw(*s);
 		}
