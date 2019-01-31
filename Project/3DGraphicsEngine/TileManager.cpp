@@ -30,9 +30,30 @@ void TileManager::start()
 			Tile t = Tile();
 
 			tileMap[i][j] = t;
-			t.setTileType(brickWall);
+			t.setTileType(grass);
 		}
 	}
+
+	setTileTextures();
+}
+
+void TileManager::setTileTextures()
+{
+	tileTextures.resize(TileTypes::count);
+	tileSprites.resize(TileTypes::count);
+
+	sf::Texture tex;
+
+	if (!tex.loadFromFile("E:/Documents/FieldsWithoutWarRepo/Project/Debug/Images/grass.png"))
+	{
+		std::cout << "Texture loading failed" << std::endl;
+	}
+
+	tileTextures[grass] = tex;
+
+	sf::Sprite sprite;
+	sprite.setTexture(tileTextures[grass]);
+	tileSprites[grass] = sprite;
 }
 
 TileManager::~TileManager()

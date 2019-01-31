@@ -40,7 +40,7 @@
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
     <ClCompile Include="TileRenderer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Tile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +57,7 @@
       <Filter>Header Files\Tile</Filter>
     </ClInclude>
     <ClInclude Include="TileRenderer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Tile</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

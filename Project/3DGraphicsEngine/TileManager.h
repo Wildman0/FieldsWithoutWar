@@ -1,11 +1,10 @@
 #pragma once
 
 #include "TileType.h"
-#include <array>
 #include "Tile.h"
 #include <vector>
-#include <SFML/System/Utf.hpp>
 #include <SFML/Graphics/Texture.hpp>
+#include <SFML/Graphics/Sprite.hpp>
 
 class TileManager
 {
@@ -16,6 +15,7 @@ public:
 
 	std::vector<std::vector<Tile>> tileMap;
 	std::vector<sf::Texture> tileTextures;
+	std::vector<sf::Sprite> tileSprites;
 
 private:
 	void start();

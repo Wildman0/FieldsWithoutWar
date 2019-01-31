@@ -38,9 +38,8 @@ void Game::sfmlTest()
 		}
 
 		window.clear();
-		//window.draw(shape);
 
-		tileRenderer.renderTileMap(tileManager.tileMap, &window);
+		tileRenderer.renderTileMap(tileManager, &window);
 
 		window.display();
 	}
