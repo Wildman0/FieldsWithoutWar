@@ -16,7 +16,8 @@ void TileRenderer::renderTileMap(TileManager tileManager, sf::RenderWindow* wind
 		{
 			sf::Sprite s;
 
-			s = tileManager.tileSprites[grass];
+			s = *tileManager.tileSprites[grass];
+			//s.setTexture(*tileManager.tileTextures[grass]);
 			s.setTexture(tileManager.tileMap[i][j].texture);
 			s.setPosition(i * 35, j * 35);
 

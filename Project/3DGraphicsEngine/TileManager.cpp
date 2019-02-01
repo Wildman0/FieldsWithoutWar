@@ -44,16 +44,26 @@ void TileManager::setTileTextures()
 
 	sf::Texture tex;
 
+	tileTextures[grass] = new sf::Texture();
+	tileSprites[grass] = new sf::Sprite();
+
 	if (!tex.loadFromFile("E:/Documents/FieldsWithoutWarRepo/Project/Debug/Images/grass.png"))
 	{
 		std::cout << "Texture loading failed" << std::endl;
 	}
 
-	tileTextures[grass] = tex;
+	tileTextures[grass] = &tex;
+
+	for (size_t i = 0; i < tileMap.capacity(); i++)
+	{
+		for (size_t j = 0; j < tileMap[0].capacity(); j++)
+		{
+			tileMap[i][j].texture = tex;
+		}
+	}
 
 	sf::Sprite sprite;
-	sprite.setTexture(tileTextures[grass]);
-	tileSprites[grass] = sprite;
+	tileSprites[grass]->setTexture(*tileTextures[grass]);
 }
 
 TileManager::~TileManager()
