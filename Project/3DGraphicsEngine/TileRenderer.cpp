@@ -1,26 +1,31 @@
 #include "TileRenderer.h"
 #include "Tile.h"
-#include <SFML/Graphics/CircleShape.hpp>
 #include <iostream>
 
 TileRenderer::TileRenderer()
 {
 }
 
-//Renders all tiles in a multidimensional tile vector
+//Renders all tiles in a multidimensional tile vector. Renders 1 type of tile at a time so the GPU doesn't have to switch textures often
 void TileRenderer::renderTileMap(TileManager* tileManager, sf::RenderWindow* window)
 {
+	sf::Sprite s = tileManager->tileSprites[grass];
+
 	for (size_t i = 0; i < tileManager->tileMap.capacity(); i++)
 	{
 		for (size_t j = 0; j < tileManager->tileMap[0].capacity(); j++)
 		{
-			sf::Sprite s;
+			for (size_t k = 0; k < TileTypes::count; k++)
+			{
+				s.setTexture(tileManager->tileTextures[k]);
 
-			s = tileManager->tileSprites[grass];
-			s.setTexture(tileManager->tileTextures[grass]);
-			s.setPosition(i * 35, j * 35);
+				if (tileManager->tileMap[i][j].getTileType() == k)
+				{
+					s.setPosition(i * 35, j * 35);
 
-			window->draw(s);
+					window->draw(s);
+				}
+			}
 		}
 	}
 }
