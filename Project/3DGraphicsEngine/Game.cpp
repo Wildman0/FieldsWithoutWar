@@ -21,16 +21,6 @@ void Game::start()
 	sfmlTest();
 }
 
-void Game::addBehaviourInstance(GameBehaviour behaviour)
-{
-	
-}
-
-void Game::destroyBehaviourInstance(GameBehaviour behaviour)
-{
-	
-}
-
 //SFML sample code
 void Game::sfmlTest()
 {
@@ -38,11 +28,6 @@ void Game::sfmlTest()
 
 	while(window.isOpen())
 	{
-		for (size_t i = 0; i < gameBehaviours.capacity(); i++)
-		{
-			gameBehaviours[i].onUpdate();
-		}
-
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
