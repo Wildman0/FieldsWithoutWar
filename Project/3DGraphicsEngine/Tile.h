@@ -12,8 +12,6 @@ public:
 	void setTileType(TileType t) { tileType = t; }
 	TileType getTileType() { return tileType; }
 
-	sf::Texture texture;
-
 private:
 	TileType tileType;
 };

@@ -11,6 +11,6 @@ public:
 	TileRenderer();
 	~TileRenderer();
 
-	void renderTileMap(TileManager tileManager, sf::RenderWindow* window);
+	void renderTileMap(TileManager* tileManager, sf::RenderWindow* window);
 };
 

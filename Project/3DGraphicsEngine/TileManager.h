@@ -14,8 +14,8 @@ public:
 	~TileManager();
 
 	std::vector<std::vector<Tile>> tileMap;
-	std::vector<sf::Texture*> tileTextures;
-	std::vector<sf::Sprite*> tileSprites;
+	std::vector<sf::Texture> tileTextures;
+	std::vector<sf::Sprite> tileSprites;
 
 private:
 	void start();
