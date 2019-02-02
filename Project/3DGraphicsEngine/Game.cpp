@@ -5,6 +5,7 @@
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
+	window.setFramerateLimit(60);
 	start();
 }
 
@@ -23,10 +24,7 @@ void Game::start()
 //SFML sample code
 void Game::sfmlTest()
 {
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
-
-	tileManager = TileManager(50, 50);
+	tileManager = TileManager(150, 150);
 
 	while(window.isOpen())
 	{
@@ -39,7 +37,7 @@ void Game::sfmlTest()
 
 		window.clear();
 
-		tileRenderer.renderTileMap(tileManager, &window);
+		tileRenderer.renderTileMap(&tileManager, &window);
 
 		window.display();
 	}
