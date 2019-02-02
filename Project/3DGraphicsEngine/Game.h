@@ -14,7 +14,7 @@ public:
 
 	static void createBehaviourInstance(GameBehaviour behaviour);
 	static void addBehaviourInstance(GameBehaviour behaviour);
-	static void destroyBehaviourInstnace(GameBehaviour behaviour);
+	static void destroyBehaviourInstance(GameBehaviour behaviour);
 
 	TileManager tileManager;
 	TileRenderer tileRenderer;
