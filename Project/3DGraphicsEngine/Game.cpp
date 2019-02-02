@@ -1,6 +1,5 @@
 #include "Game.h"
 #include <iostream>
-#include "GameBehaviourTest.h"
 
 //Constructor
 Game::Game()
@@ -19,16 +18,15 @@ Game::~Game()
 //Runs at start
 void Game::start()
 {
-	GameBehaviourTest test = GameBehaviourTest();
 	sfmlTest();
 }
 
-void Game::addBehaviourInstance(GameBehaviour* behaviour)
+void Game::addBehaviourInstance(GameBehaviour behaviour)
 {
-	gameBehaviours.push_back(behaviour);
+	
 }
 
-void Game::destroyBehaviourInstance(GameBehaviour* behaviour)
+void Game::destroyBehaviourInstance(GameBehaviour behaviour)
 {
 	
 }
@@ -42,7 +40,7 @@ void Game::sfmlTest()
 	{
 		for (size_t i = 0; i < gameBehaviours.capacity(); i++)
 		{
-			gameBehaviours[i]->onUpdate();
+			gameBehaviours[i].onUpdate();
 		}
 
 		sf::Event event;

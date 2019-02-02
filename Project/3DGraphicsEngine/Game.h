@@ -12,8 +12,8 @@ public:
 
 	void start();
 
-	static void addBehaviourInstance(GameBehaviour* behaviour);
-	static void destroyBehaviourInstance(GameBehaviour* behaviour);
+	static void addBehaviourInstance(GameBehaviour behaviour);
+	static void destroyBehaviourInstance(GameBehaviour behaviour);
 
 	TileManager tileManager;
 	TileRenderer tileRenderer;
@@ -24,6 +24,8 @@ private:
 
 	void sfmlTest();
 
-	std::vector<GameBehaviour*> gameBehaviours;
+	std::vector<GameBehaviour> gameBehaviours;
 };
+
+
 
