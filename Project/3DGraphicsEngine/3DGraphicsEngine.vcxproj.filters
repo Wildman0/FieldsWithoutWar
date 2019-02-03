@@ -54,7 +54,7 @@
     <ClCompile Include="BehaviourBaseTest.cpp">
       <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
-    <ClCompile Include="BehaviourCreationHandler.cpp">
+    <ClCompile Include="BehaviourHandler.cpp">
       <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
   </ItemGroup>
@@ -80,7 +80,7 @@
     <ClInclude Include="BehaviourBaseTest.h">
       <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
-    <ClInclude Include="BehaviourCreationHandler.h">
+    <ClInclude Include="BehaviourHandler.h">
       <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
   </ItemGroup>
