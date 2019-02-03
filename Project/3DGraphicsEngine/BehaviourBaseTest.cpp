@@ -1,6 +1,5 @@
 #include "BehaviourBaseTest.h"
 #include "Game.h"
-#include <iostream>
 
 BehaviourBaseTest::BehaviourBaseTest()
 {
