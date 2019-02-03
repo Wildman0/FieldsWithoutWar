@@ -1,10 +1,10 @@
 #include "BaseBehaviour.h"
 #include <iostream>
-#include "Game.h"
+#include "BehaviourHandler.h"
 
 BaseBehaviour::BaseBehaviour()
 {
-	Game::addBehaviour(this);
+
 }
 
 BaseBehaviour::~BaseBehaviour()

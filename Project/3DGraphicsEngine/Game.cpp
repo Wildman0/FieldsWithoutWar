@@ -6,6 +6,9 @@
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
+	behaviourHandler = BehaviourHandler();
+	BehaviourBaseTest b;
+	behaviourHandler.addBehaviour(&b);
 	start();
 }
 
@@ -13,11 +16,6 @@ Game::Game()
 Game::~Game()
 {
 
-}
-
-void Game::addBehaviour(BaseBehaviour* b)
-{
-	behaviours.push_back(b);
 }
 
 //Runs at start
@@ -42,6 +40,11 @@ void Game::sfmlTest()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+		}
+
+		for (size_t i = 0; i < behaviourHandler.getBehaviours().capacity(); i++)
+		{
+			behaviourHandler.getBehaviours()[i]->onUpdate();
 		}
 
 		window.clear();

@@ -10,5 +10,8 @@ public:
 	virtual void onStart() {};
 	virtual void onUpdate() {};
 	virtual void onRender() {};
+
+private:
+
 };
 
