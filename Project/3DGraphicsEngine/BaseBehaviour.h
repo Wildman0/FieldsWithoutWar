@@ -9,5 +9,6 @@ public:
 	virtual void onAwake() {};
 	virtual void onStart() {};
 	virtual void onUpdate() {};
+	virtual void onRender() {};
 };
 

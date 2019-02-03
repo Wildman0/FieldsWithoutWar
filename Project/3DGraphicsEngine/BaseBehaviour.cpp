@@ -5,7 +5,6 @@
 BaseBehaviour::BaseBehaviour()
 {
 	Game::addBehaviour(this);
-	std::cout << "Working";
 }
 
 BaseBehaviour::~BaseBehaviour()
