@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="BaseBehaviour.cpp" />
     <ClCompile Include="BehaviourBaseTest.cpp" />
+    <ClCompile Include="BehaviourCreationHandler.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Tile.cpp" />
@@ -30,6 +31,7 @@
   <ItemGroup>
     <ClInclude Include="BaseBehaviour.h" />
     <ClInclude Include="BehaviourBaseTest.h" />
+    <ClInclude Include="BehaviourCreationHandler.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileManager.h" />

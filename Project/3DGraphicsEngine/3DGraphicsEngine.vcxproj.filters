@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Tile">
       <UniqueIdentifier>{a5f87aa6-1aa9-47ef-8e22-d87758d0603e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Behaviour">
+      <UniqueIdentifier>{e2f1375b-8b59-454c-a741-080f0828e3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviour">
+      <UniqueIdentifier>{c218b2e7-4a7e-4a8b-bc64-83bef1e99456}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -43,10 +49,13 @@
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
     <ClCompile Include="BaseBehaviour.cpp">
-      <Filter>Source Files\Main</Filter>
+      <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
     <ClCompile Include="BehaviourBaseTest.cpp">
-      <Filter>Source Files\Main</Filter>
+      <Filter>Source Files\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviourCreationHandler.cpp">
+      <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,10 +75,13 @@
       <Filter>Header Files\Tile</Filter>
     </ClInclude>
     <ClInclude Include="BaseBehaviour.h">
-      <Filter>Header Files\Main</Filter>
+      <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
     <ClInclude Include="BehaviourBaseTest.h">
-      <Filter>Header Files\Main</Filter>
+      <Filter>Header Files\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourCreationHandler.h">
+      <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
