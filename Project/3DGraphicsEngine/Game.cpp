@@ -6,8 +6,6 @@
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
-	BaseBehaviour b;
-	Game::behaviours = { &b };
 	start();
 }
 
