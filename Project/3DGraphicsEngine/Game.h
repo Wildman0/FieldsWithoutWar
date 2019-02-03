@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "TileManager.h"
 #include "TileRenderer.h"
+#include "BaseBehaviour.h"
 
 class Game
 {
@@ -11,6 +12,9 @@ public:
 
 	void start();
 
+	static void addBehaviour(BaseBehaviour* b);
+	static void destroyBehaviour(BaseBehaviour b);
+
 	TileManager tileManager;
 	TileRenderer tileRenderer;
 
@@ -19,6 +23,8 @@ public:
 private:
 
 	void sfmlTest();
+
+	static std::vector<BaseBehaviour*> behaviours;
 };
 
 

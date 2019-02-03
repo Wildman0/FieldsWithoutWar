@@ -42,6 +42,12 @@
     <ClCompile Include="TileRenderer.cpp">
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
+    <ClCompile Include="BaseBehaviour.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviourBaseTest.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -58,6 +64,12 @@
     </ClInclude>
     <ClInclude Include="TileRenderer.h">
       <Filter>Header Files\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseBehaviour.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourBaseTest.h">
+      <Filter>Header Files\Main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

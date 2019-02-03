@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseBehaviour.cpp" />
+    <ClCompile Include="BehaviourBaseTest.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Tile.cpp" />
@@ -26,6 +28,8 @@
     <ClCompile Include="TileRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseBehaviour.h" />
+    <ClInclude Include="BehaviourBaseTest.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileManager.h" />

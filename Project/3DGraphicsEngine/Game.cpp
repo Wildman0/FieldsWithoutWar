@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <iostream>
+#include "BehaviourBaseTest.h"
 
 //Constructor
 Game::Game()
@@ -14,9 +15,15 @@ Game::~Game()
 
 }
 
+void Game::addBehaviour(BaseBehaviour* b)
+{
+	behaviours.push_back(b);
+}
+
 //Runs at start
 void Game::start()
 {
+	BehaviourBaseTest test = BehaviourBaseTest();
 	sfmlTest();
 }
 
