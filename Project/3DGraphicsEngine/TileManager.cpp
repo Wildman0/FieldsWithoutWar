@@ -23,12 +23,12 @@ void TileManager::start()
 		tileMap[i].resize(mapSizeY);
 	}
 
+	Tile t = Tile();
+
 	for (size_t i = 0; i < mapSizeX; i++)
 	{
 		for (size_t j = 0; j < mapSizeY; j++)
 		{
-			Tile t = Tile();
-
 			tileMap[i][j] = t;
 			t.setTileType(grass);
 		}
