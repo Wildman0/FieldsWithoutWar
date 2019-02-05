@@ -6,10 +6,10 @@ public:
 	BaseBehaviour();
 	~BaseBehaviour();
 
-	virtual void onAwake() {};
-	virtual void onStart() {};
-	virtual void onUpdate() {};
-	virtual void onRender() {};
+	virtual void onAwake() = 0;
+	virtual void onStart() = 0;
+	virtual void onUpdate() = 0;
+	virtual void onRender() = 0;
 
 private:
 

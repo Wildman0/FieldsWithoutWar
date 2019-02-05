@@ -21,6 +21,11 @@ void BehaviourBaseTest::onUpdate()
 	
 }
 
+void BehaviourBaseTest::onRender()
+{
+	
+}
+
 BehaviourBaseTest::~BehaviourBaseTest()
 {
 }

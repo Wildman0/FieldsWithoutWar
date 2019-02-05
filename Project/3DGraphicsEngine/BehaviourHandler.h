@@ -11,7 +11,7 @@ public:
 	~BehaviourHandler();
 
 	void addBehaviour(BaseBehaviour* b);
-	void destroyBehaviour(BaseBehaviour b);
+	void destroyBehaviour(BaseBehaviour* b);
 
 	std::vector<BaseBehaviour*> getBehaviours() { return behaviours; }
 

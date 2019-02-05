@@ -11,7 +11,7 @@ void BehaviourHandler::addBehaviour(BaseBehaviour* b)
 	b->onStart();
 }
 
-void BehaviourHandler::destroyBehaviour(BaseBehaviour b)
+void BehaviourHandler::destroyBehaviour(BaseBehaviour* b)
 {
 	//Destroy behaviour
 }
