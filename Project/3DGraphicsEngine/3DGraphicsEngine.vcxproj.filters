@@ -48,13 +48,13 @@
     <ClCompile Include="TileRenderer.cpp">
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
-    <ClCompile Include="BaseBehaviour.cpp">
-      <Filter>Source Files\Behaviour</Filter>
-    </ClCompile>
     <ClCompile Include="BehaviourBaseTest.cpp">
       <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
     <ClCompile Include="BehaviourHandler.cpp">
+      <Filter>Source Files\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseBehaviour.cpp">
       <Filter>Source Files\Behaviour</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,13 +74,13 @@
     <ClInclude Include="TileRenderer.h">
       <Filter>Header Files\Tile</Filter>
     </ClInclude>
-    <ClInclude Include="BaseBehaviour.h">
-      <Filter>Header Files\Behaviour</Filter>
-    </ClInclude>
     <ClInclude Include="BehaviourBaseTest.h">
       <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
     <ClInclude Include="BehaviourHandler.h">
+      <Filter>Header Files\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseBehaviour.h">
       <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
   </ItemGroup>

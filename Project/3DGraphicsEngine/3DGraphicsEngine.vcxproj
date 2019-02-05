@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaseBehaviour.cpp" />
+    <ClCompile Include="IBaseBehaviour.cpp" />
     <ClCompile Include="BehaviourBaseTest.cpp" />
     <ClCompile Include="BehaviourHandler.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -29,7 +29,7 @@
     <ClCompile Include="TileRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseBehaviour.h" />
+    <ClInclude Include="IBaseBehaviour.h" />
     <ClInclude Include="BehaviourBaseTest.h" />
     <ClInclude Include="BehaviourHandler.h" />
     <ClInclude Include="Game.h" />

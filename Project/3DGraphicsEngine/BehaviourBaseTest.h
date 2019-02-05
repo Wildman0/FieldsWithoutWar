@@ -1,7 +1,7 @@
 #pragma once
-#include "BaseBehaviour.h"
+#include "IBaseBehaviour.h"
 
-class BehaviourBaseTest : public BaseBehaviour
+class BehaviourBaseTest : public IBaseBehaviour
 {
 public: 
 	BehaviourBaseTest();

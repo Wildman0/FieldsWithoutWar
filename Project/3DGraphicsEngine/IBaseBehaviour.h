@@ -1,10 +1,9 @@
 #pragma once
 
-class BaseBehaviour
+class IBaseBehaviour
 {
 public:
-	BaseBehaviour();
-	~BaseBehaviour();
+	virtual ~IBaseBehaviour();
 
 	virtual void onAwake() = 0;
 	virtual void onStart() = 0;

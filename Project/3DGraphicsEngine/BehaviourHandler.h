@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "BaseBehaviour.h"
+#include "IBaseBehaviour.h"
 
 class BehaviourHandler
 {
@@ -10,12 +10,12 @@ public:
 	BehaviourHandler();
 	~BehaviourHandler();
 
-	void addBehaviour(BaseBehaviour* b);
-	void destroyBehaviour(BaseBehaviour* b);
+	void addBehaviour(IBaseBehaviour* b);
+	void destroyBehaviour(IBaseBehaviour* b);
 
-	std::vector<BaseBehaviour*> getBehaviours() { return behaviours; }
+	std::vector<IBaseBehaviour*> getBehaviours() { return behaviours; }
 
 private:
-	std::vector<BaseBehaviour*> behaviours;
+	std::vector<IBaseBehaviour*> behaviours;
 };
 

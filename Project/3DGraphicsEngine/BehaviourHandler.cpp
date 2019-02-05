@@ -4,14 +4,14 @@ BehaviourHandler::BehaviourHandler()
 {
 }
 
-void BehaviourHandler::addBehaviour(BaseBehaviour* b)
+void BehaviourHandler::addBehaviour(IBaseBehaviour* b)
 {
 	behaviours.push_back(b);
 	b->onAwake();
 	b->onStart();
 }
 
-void BehaviourHandler::destroyBehaviour(BaseBehaviour* b)
+void BehaviourHandler::destroyBehaviour(IBaseBehaviour* b)
 {
 	//Destroy behaviour
 }
