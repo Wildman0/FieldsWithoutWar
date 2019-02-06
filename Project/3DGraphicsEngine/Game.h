@@ -19,9 +19,12 @@ public:
 
 	sf::RenderWindow window;
 
-	static BehaviourHandler* behaviourHandler;
-
 private:
 
 	void sfmlTest();
 };
+
+namespace Behaviour
+{
+	static BehaviourHandler* behaviourHandler = new BehaviourHandler();
+}

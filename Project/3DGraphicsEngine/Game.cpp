@@ -7,7 +7,7 @@ Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
 	BehaviourBaseTest b;
-	behaviourHandler->addBehaviour(&b);
+	Behaviour::behaviourHandler->addBehaviour(&b);
 	start();
 }
 
