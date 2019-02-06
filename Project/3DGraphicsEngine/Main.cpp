@@ -1,6 +1,6 @@
 #include "Game.h"
 
-BehaviourHandler* behaviourHandler = new BehaviourHandler();
+BehaviourHandler* Game::behaviourHandler = new BehaviourHandler();
 
 //Program entry point
 void main()

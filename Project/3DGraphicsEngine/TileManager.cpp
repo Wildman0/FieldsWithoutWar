@@ -45,7 +45,7 @@ void TileManager::setTileTextures()
 	tileTextures[grass] = sf::Texture();
 	tileSprites[grass] = sf::Sprite();
 
-	if (!tileTextures[grass].loadFromFile("D:/FieldsWithoutWar/Project/3DGraphicsEngine/Debug/Images/grass.png"))
+	if (!tileTextures[grass].loadFromFile(/*"D:/FieldsWithoutWar/Project/3DGraphicsEngine/Debug/Images/grass.png"*/"E:/Documents/FieldsWithoutWarRepo/Project/3DGraphicsEngine/Images/grass.png"))
 	{
 		std::cout << "Texture loading failed" << std::endl;
 	}
