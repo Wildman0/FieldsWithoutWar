@@ -19,11 +19,11 @@ public:
 
 	sf::RenderWindow window;
 
+	BehaviourHandler* behaviourHandler;
+
 private:
 
 	void sfmlTest();
-
-	BehaviourHandler behaviourHandler;
 };
 
 

@@ -6,9 +6,10 @@
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
-	behaviourHandler = BehaviourHandler();
+	Game::behaviourHandler = new BehaviourHandler();
+	//behaviourHandler = new BehaviourHandler();
 	BehaviourBaseTest b;
-	behaviourHandler.addBehaviour(&b);
+	behaviourHandler->addBehaviour(&b);
 	start();
 }
 
@@ -38,13 +39,21 @@ void Game::sfmlTest()
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
+			if (sf::Event::KeyPressed)
+			{
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+				{
+					window.close();
+				}
+			}
+
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
 
-		for (size_t i = 0; i < behaviourHandler.getBehaviours().capacity(); i++)
+		for (size_t i = 0; i < behaviourHandler->getBehaviours().capacity(); i++)
 		{
-			behaviourHandler.getBehaviours()[i]->onUpdate();
+			behaviourHandler->getBehaviours()[i]->onUpdate();
 		}
 
 		window.clear();
