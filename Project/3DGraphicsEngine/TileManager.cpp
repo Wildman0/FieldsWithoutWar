@@ -33,7 +33,7 @@ void TileManager::start()
 			t.setTileType(grass);
 		}
 	}
-
+	
 	setTileTextures();
 }
 
@@ -45,11 +45,11 @@ void TileManager::setTileTextures()
 	tileTextures[grass] = sf::Texture();
 	tileSprites[grass] = sf::Sprite();
 
-	if (!tileTextures[grass].loadFromFile("E:/Documents/FieldsWithoutWarRepo/Project/Debug/Images/grass.png"))
+	if (!tileTextures[grass].loadFromFile("D:/FieldsWithoutWar/Project/3DGraphicsEngine/Debug/Images/grass.png"))
 	{
 		std::cout << "Texture loading failed" << std::endl;
 	}
-
+	
 	tileSprites[grass].setTexture(tileTextures[grass]);
 }
 

@@ -2,6 +2,7 @@
 
 BehaviourHandler::BehaviourHandler()
 {
+	
 }
 
 void BehaviourHandler::addBehaviour(IBaseBehaviour* b)

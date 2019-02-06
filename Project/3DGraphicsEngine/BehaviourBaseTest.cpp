@@ -19,7 +19,7 @@ void BehaviourBaseTest::onStart()
 
 void BehaviourBaseTest::onUpdate()
 {
-	
+
 }
 
 void BehaviourBaseTest::onRender()

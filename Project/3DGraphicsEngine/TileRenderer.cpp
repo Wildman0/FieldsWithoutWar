@@ -22,7 +22,7 @@ void TileRenderer::renderTileMap(TileManager* tileManager, sf::RenderWindow* win
 				if (tileManager->tileMap[i][j].getTileType() == k)
 				{
 					s.setPosition(i * 35, j * 35);
-
+					
 					window->draw(s);
 				}
 			}

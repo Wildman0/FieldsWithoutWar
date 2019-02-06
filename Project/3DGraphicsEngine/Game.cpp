@@ -2,11 +2,12 @@
 #include <iostream>
 #include "BehaviourBaseTest.h"
 
+extern BehaviourHandler* behaviourHandler;
+
 //Constructor
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
-	Game::behaviourHandler = new BehaviourHandler();
 	//behaviourHandler = new BehaviourHandler();
 	BehaviourBaseTest b;
 	behaviourHandler->addBehaviour(&b);
