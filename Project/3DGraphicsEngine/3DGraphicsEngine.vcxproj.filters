@@ -83,5 +83,8 @@
     <ClInclude Include="IBaseBehaviour.h">
       <Filter>Header Files\Behaviour</Filter>
     </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files\Behaviour</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,5 +1,8 @@
 #include "Game.h"
+
 #include <iostream>
+
+#include "Behaviour.h"
 #include "BehaviourBaseTest.h"
 
 //Constructor
@@ -49,9 +52,9 @@ void Game::sfmlTest()
 				window.close();
 		}
 
-		for (size_t i = 0; i < behaviourHandler->getBehaviours().capacity(); i++)
+		for (size_t i = 0; i < Behaviour::behaviourHandler->getBehaviours().capacity(); i++)
 		{
-			behaviourHandler->getBehaviours()[i]->onUpdate();
+			Behaviour::behaviourHandler->getBehaviours()[i]->onUpdate();
 		}
 
 		window.clear();

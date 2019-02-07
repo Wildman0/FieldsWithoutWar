@@ -29,6 +29,7 @@
     <ClCompile Include="TileRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Behaviour.h" />
     <ClInclude Include="IBaseBehaviour.h" />
     <ClInclude Include="BehaviourBaseTest.h" />
     <ClInclude Include="BehaviourHandler.h" />
