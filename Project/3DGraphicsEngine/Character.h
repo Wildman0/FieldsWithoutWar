@@ -1,5 +1,8 @@
 #pragma once
-class Character 
+
+#include "Pawn.h"
+
+class Character : public Pawn
 {
 public:
 	Character();
