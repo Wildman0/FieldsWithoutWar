@@ -2,7 +2,9 @@
 #include <SFML/Graphics.hpp>
 
 #include "TileManager.h"
+
 #include "TileRenderer.h"
+#include "CharacterRenderer.h"
 
 #include "BehaviourHandler.h"
 
@@ -21,5 +23,6 @@ public:
 
 private:
 
+	void createRenderers();
 	void sfmlTest();
 };
