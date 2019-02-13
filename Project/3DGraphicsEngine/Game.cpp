@@ -25,7 +25,7 @@ void Game::start()
 	sfmlTest();
 }
 
-//Creates all render objects
+//Creates all render objects and adds them to the Behaviour Handler
 void Game::createRenderers()
 {
 	Behaviour::behaviourHandler->addBehaviour(new CharacterRenderer());
