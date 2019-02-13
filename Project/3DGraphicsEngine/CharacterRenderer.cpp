@@ -1,25 +1,12 @@
 #include "CharacterRenderer.h"
-#include <iostream>
 
-CharacterRenderer::CharacterRenderer()
-{
+CharacterRenderer::CharacterRenderer() {}
 
-}
+void CharacterRenderer::onAwake() {}
 
-void CharacterRenderer::onAwake()
-{
+void CharacterRenderer::onStart() {}
 
-}
-
-void CharacterRenderer::onStart()
-{
-
-}
-
-void CharacterRenderer::onUpdate()
-{
-
-}
+void CharacterRenderer::onUpdate() {}
 
 void CharacterRenderer::onRender()
 {
