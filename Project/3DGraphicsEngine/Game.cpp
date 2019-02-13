@@ -9,8 +9,6 @@
 Game::Game()
 	:window(sf::VideoMode(1280, 720, 32), "Fields Without War")
 {
-	BehaviourBaseTest b;
-	Behaviour::behaviourHandler->addBehaviour(&b);
 	start();
 }
 
@@ -23,8 +21,14 @@ Game::~Game()
 //Runs at start
 void Game::start()
 {
-	BehaviourBaseTest test = BehaviourBaseTest();
+	createRenderers();
 	sfmlTest();
+}
+
+//Creates all render objects
+void Game::createRenderers()
+{
+	Behaviour::behaviourHandler->addBehaviour(new CharacterRenderer());
 }
 
 //SFML sample code
@@ -55,6 +59,11 @@ void Game::sfmlTest()
 		for (size_t i = 0; i < Behaviour::behaviourHandler->getBehaviours().capacity(); i++)
 		{
 			Behaviour::behaviourHandler->getBehaviours()[i]->onUpdate();
+		}
+
+		for (size_t i = 0; i < Behaviour::behaviourHandler->getBehaviours().capacity(); i++)
+		{
+			Behaviour::behaviourHandler->getBehaviours()[i]->onRender();
 		}
 
 		window.clear();
