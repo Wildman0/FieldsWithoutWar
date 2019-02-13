@@ -37,6 +37,12 @@
     <Filter Include="Source Files\AI">
       <UniqueIdentifier>{962704a5-5734-4bf1-aa2b-ecc7df3a092e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Render">
+      <UniqueIdentifier>{5e86b80c-c887-439a-89b2-6d31905ce2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{ba3bb889-71dd-4440-9123-7fba00d0bb53}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -49,9 +55,6 @@
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
     <ClCompile Include="TileManager.cpp">
-      <Filter>Source Files\Tile</Filter>
-    </ClCompile>
-    <ClCompile Include="TileRenderer.cpp">
       <Filter>Source Files\Tile</Filter>
     </ClCompile>
     <ClCompile Include="BehaviourBaseTest.cpp">
@@ -72,6 +75,12 @@
     <ClCompile Include="Character.cpp">
       <Filter>Source Files\AI</Filter>
     </ClCompile>
+    <ClCompile Include="TileRenderer.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterRenderer.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -84,9 +93,6 @@
       <Filter>Header Files\Tile</Filter>
     </ClInclude>
     <ClInclude Include="TileType.h">
-      <Filter>Header Files\Tile</Filter>
-    </ClInclude>
-    <ClInclude Include="TileRenderer.h">
       <Filter>Header Files\Tile</Filter>
     </ClInclude>
     <ClInclude Include="BehaviourBaseTest.h">
@@ -109,6 +115,12 @@
     </ClInclude>
     <ClInclude Include="Character.h">
       <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRenderer.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterRenderer.h">
+      <Filter>Header Files\Render</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
