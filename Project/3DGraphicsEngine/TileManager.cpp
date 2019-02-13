@@ -1,11 +1,13 @@
 #include "TileManager.h"
 #include <iostream>
 
+//Default constructor
 TileManager::TileManager()
 {
 	
 }
 
+//Constructor
 TileManager::TileManager(int mapSizeX, int mapSizeY)
 {
 	this->mapSizeX = mapSizeX;
@@ -14,6 +16,7 @@ TileManager::TileManager(int mapSizeX, int mapSizeY)
 	start();
 }
 
+//Runs after construction
 void TileManager::start()
 {
 	tileMap.resize(mapSizeX);
@@ -34,6 +37,9 @@ void TileManager::start()
 		}
 	}
 	
+	//tileMap[0][0] isn't set properly by the loop above so it's set manually here
+	tileMap[0][0] = t;
+
 	setTileTextures();
 }
 
