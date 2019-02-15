@@ -17,7 +17,10 @@ void TileRenderer::renderTileMap(TileManager* tileManager, sf::RenderWindow* win
 		{
 			for (size_t k = 0; k < TileTypes::count; k++)
 			{
-				s.setTexture(tileManager->tileTextures[k]);
+				if (s.getTexture())
+				{
+					s.setTexture(tileManager->tileTextures[k]);
+				}
 
 				if (tileManager->tileMap[i][j].getTileType() == k)
 				{

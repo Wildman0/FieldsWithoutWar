@@ -37,7 +37,7 @@ void Game::sfmlTest()
 	sf::CircleShape shape(100.f);
 	shape.setFillColor(sf::Color::Green);
 
-	tileManager = TileManager(2, 2);
+	tileManager = TileManager(50, 50);
 
 	while(window.isOpen())
 	{
