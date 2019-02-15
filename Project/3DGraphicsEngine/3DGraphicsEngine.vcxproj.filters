@@ -81,6 +81,9 @@
     <ClCompile Include="CharacterRenderer.cpp">
       <Filter>Source Files\Render</Filter>
     </ClCompile>
+    <ClCompile Include="CharacterManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -121,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="CharacterRenderer.h">
       <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentGame.h">
+      <Filter>Header Files\Main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

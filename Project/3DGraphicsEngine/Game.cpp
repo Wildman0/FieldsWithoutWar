@@ -4,6 +4,7 @@
 
 #include "Behaviour.h"
 #include "BehaviourBaseTest.h"
+#include "CurrentGame.h"
 
 //Constructor
 Game::Game()
@@ -21,6 +22,7 @@ Game::~Game()
 //Runs at start
 void Game::start()
 {
+	CurrentGame::game = this;
 	createRenderers();
 	sfmlTest();
 }
@@ -28,7 +30,7 @@ void Game::start()
 //Creates all render objects and adds them to the Behaviour Handler
 void Game::createRenderers()
 {
-	Behaviour::behaviourHandler->addBehaviour(new CharacterRenderer());
+	Behaviour::behaviourHandler->addBehaviour(new CharacterRenderer(new CharacterManager));
 }
 
 //SFML sample code

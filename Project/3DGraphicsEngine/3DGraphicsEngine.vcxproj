@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharacterManager.cpp" />
     <ClCompile Include="CharacterRenderer.cpp" />
     <ClCompile Include="IBaseBehaviour.cpp" />
     <ClCompile Include="BehaviourBaseTest.cpp" />
@@ -35,7 +36,9 @@
   <ItemGroup>
     <ClInclude Include="Behaviour.h" />
     <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterManager.h" />
     <ClInclude Include="CharacterRenderer.h" />
+    <ClInclude Include="CurrentGame.h" />
     <ClInclude Include="IBaseBehaviour.h" />
     <ClInclude Include="BehaviourBaseTest.h" />
     <ClInclude Include="BehaviourHandler.h" />
