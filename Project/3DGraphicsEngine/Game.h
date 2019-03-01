@@ -6,7 +6,6 @@
 #include "TileManager.h"
 
 #include "TileRenderer.h"
-#include "CharacterRenderer.h"
 
 #include "BehaviourHandler.h"
 

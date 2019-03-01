@@ -4,5 +4,5 @@
 
 namespace CurrentGame
 {
-	Game* game;
+	extern Game* game;
 }

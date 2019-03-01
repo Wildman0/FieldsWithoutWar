@@ -5,6 +5,7 @@
 #include "Behaviour.h"
 #include "BehaviourBaseTest.h"
 #include "CurrentGame.h"
+#include "CharacterRenderer.h"
 
 //Constructor
 Game::Game()
@@ -22,7 +23,7 @@ Game::~Game()
 //Runs at start
 void Game::start()
 {
-	CurrentGame::game = this;
+	//CurrentGame::game = this;
 	createRenderers();
 	sfmlTest();
 }
